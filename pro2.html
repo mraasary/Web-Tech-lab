@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Table
+    </title>
+    <style>
+        table {
+            border: solid 1pt black;
+            border-collapse: collapse;
+        }td,th {
+            border: solid 1pt black;
+            padding: 5pt;
+            text-align: center;
+        }
+        
+        .lab {
+            background-color: aquamarine;
+        }
+        
+        thead,th {
+            background-color: blanchedalmond;
+        }
+        
+        caption {
+            border: solid 1pt black;
+            padding: 5pt;
+            background-color: aliceblue;
+            color: crimson;
+            font-weight: bold;
+        }
+        
+        tfoot {
+            background-color: lavender;
+            color: brown;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2">
+        <thead>
+            <th colspan="10">My class timetable</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>day</th>
+                <th>8 to 9</th>
+                <th>9 to 10</th>
+                <th>10 to 10:20</th>
+                <th>10:20 to 11:20</th>
+                <th>11:20 to 12:20</th>
+                <th>12:20 to 1</th>
+                <th>1 to 2</th>
+                <th>2 to 3</th>
+                <th>3 to 4</th>
+            </tr>
+            <tr>
+                <th>MONDAY</th>
+                <td>Maths</td>
+                <td>Dbms</td>
+                <td rowspan="6">short break</td>
+                <td>ada</td>
+                <td>DDCO</td>
+                <td rowspan="6">lunch break</td>
+                <td>ds</td>
+                <td>java</td>
+                <td>uhv</td>
+            </tr>
+            <tr>
+                <th>TUESDAY</th>
+                <td>DS</td>
+                <td>SE</td>
+                <td>AI</td>
+                <td>TYL</td>
+                <td>English</td>
+                <td colspan="2" style="background-color: aqua;">LATEX LAB</td>
+            </tr>
+            <tr>
+                <th>WEDNESDAY</th>
+                <td colspan="2" style="background-color: aqua;">DS LAB</td>
+                <td>CN</td>
+                <td>JAVA</td>
+                <td>DDCO</td>
+                <td>PE</td>
+                <td>SFH</td>
+            </tr>
+            <tr>
+                <th>THURSDAY</th>
+                <td>SE</td>
+                <td>DBMS</td>
+                <td>DS</td>
+                <td>ADA</td>
+                <td>TYL</td>
+                <td>TOC</td>
+                <td>kannada</td>
+            </tr>
+            <tr>
+                <th>FRIDAY</th>
+                <td>CN</td>
+                <td>SE</td>
+                <td>DBMS</td>
+                <td>DDCO</td>
+                <td>DMS</td>
+                <td>UNIX</td>
+                <td>DV</td>
+            </tr>
+            <tr>
+                <th>SATURDAY</th>
+                <td colspan="2" style="background-color: aqua;">POP LAB</td>
+                <td>DS</td>
+                <td>ADA</td>
+                <td>JAVA</td>
+                <td>PHYSICS</td>
+                <td>MATHS</td>
+            </tr>
+            <tfoot>
+                <th colspan="10">2022 schema</th>
+            </tfoot>
+        </tbody>
+    </table>
+</body>
+
+</html>
