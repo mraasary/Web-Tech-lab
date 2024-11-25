@@ -1,0 +1,207 @@
+//full p5
+//Develop HTML page named as “newpaper.html” having variety of HTML semantic elements with
+background colors, text-colors & size for figure, table, aside, section, article, header, footer… etc.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper</title>
+    <style>
+        #container {
+            width: 100%;
+            overflow: auto;
+            margin: auto;
+            background-image: linear-gradient(#25addf, #0fbfdf);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 15px 13px;
+            text-align: center;
+        }
+
+        nav li a:hover {
+            background-color: bisque;
+        }
+
+        section {
+            width: 60%;
+            margin: 5px;
+            float: left;
+            padding: 5px;
+            border: solid 1pt black;
+            background-color: bisque;
+        }
+
+        aside {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            width: 28%;
+            position: inherit;
+            border: solid 1pt black;
+            vertical-align: top;
+        }
+
+        footer {
+            margin-top: 10px;
+            width: 95%;
+            margin: auto;
+            background-color: #25addf;
+        }
+
+        figure {
+            float: left;
+            margin-top: 0;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: solid 1pt black;
+            background-color: tomato;
+
+        }
+
+        figcaption {
+            text-align: bottom;
+            color: aquamarine;
+            font-weight: bold;
+        }
+
+        article {
+            height: 200px;
+            overflow: auto;
+            text-align: justify;
+            background-color: beige;
+            margin: 5px;
+            padding: 5px;
+
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #333;
+            text-shadow: 1px 1px #fff;
+        }
+
+        aside {
+            border: dotted 2px #D6C;
+            background-image: radial-gradient(#EEE, #ABB);
+        }
+
+        a {
+            text-shadow: none;
+        }
+
+        ul {
+            list-style: square;
+        }
+
+        hgroup {
+            background-color: #EDD;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <img src="toi.png" alt="time of india" width="500px" />
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#">Physical</a></li>
+                    <li><a href="#">Cultural</a></li>
+                    <li><a href="#">Economic</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="Physical">
+            <h2>The Role of Sports in Society</h2>
+            <article>
+                <h3>Physical Health</h3>
+                The promotion of physical health is perhaps the most direct benefit of sports.
+                Regular participation in sports activities reduces the risk of chronic diseases,
+                enhances cardiovascular health, and improves mental well-being. Communities often
+                promote sports as a means to foster healthier lifestyles among children and adults alike,
+                creating programs that encourage physical activity from a young age.<br>
+                <figure>
+                    <img src="img1.png" alt="img1" width="200px" />
+                    <figcaption>Physical</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="identity">
+            <article>
+                <h3>Cultural Identity</h3>
+                Many sports are deeply embedded in national and local identities. For example,
+                soccer in Brazil and cricket in India are not just games; they are cultural
+                phenomena that represent the spirit and history of their nations. Traditional
+                sports, such as hurling in Ireland or sumo wrestling in Japan, carry significant
+                cultural heritage, serving as a source of pride and tradition.
+                <figure>
+                    <img src="img2.png" alt="img2" width="200px" />
+                    <figcaption>Identity</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="economic">
+            <article>
+                <h3>Economic Impact</h3>
+                The sports industry is a massive economic driver. Professional leagues and events generate
+                billions of dollars annually through ticket sales, broadcasting rights, and merchandise.
+                Cities often invest heavily in sports infrastructure—such as stadiums and training
+                facilities—not just for the teams, but to stimulate local economies and create jobs.
+                Major events, like the Super Bowl or the Olympics, can significantly boost tourism and local business.
+                <figure>
+                    <img src="img3.png" alt="img3" width="200px" />
+                    <figcaption>Impact</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <aside>
+            <hgroup>
+
+                <h3><a href="#Physical">Physical Health</a></h3>
+                <h3><a href="#economic">Economic Impact</a></h3>
+                <h3><a href="#identity">Cultural Identity</a></h3>
+            </hgroup>
+            <figure>
+                <img src="q2.jpg" alt="quote2" width="200px" />
+            </figure>
+            <figure>
+                <img src="q1.webp" alt="quote1" width="200px" />
+            </figure>
+            <figure>
+                <img src="q3.jpg" alt="quote3" width="200px" />
+            </figure>
+        </aside>
+    </div>
+    <footer>
+        @Aashish | Department of Computer Science | 2024-25
+    </footer>
+</body>
+
+</html>
